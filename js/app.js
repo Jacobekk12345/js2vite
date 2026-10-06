@@ -1,9 +1,17 @@
-console.log('Katalog warsztatów uruchomiony');
-console.log('projekt js2vite');
-console.log('tutaj wyswietlaja sie wyniki');
+const seats = 12;
+let enrolled = 11;
 
-console.log(typeof "pierwsza strona");
-console.log(typeof 12);
-console.log(typeof true);
-console.log(typeof typeof 12);
-console.log(NaN + 12);
+switch(enrolled) {
+    case 12: {
+        console.log("nie ma wolnych miejsc");
+        break;
+    }
+    case 0: {
+        console.log("wszystkie miejsca sa wolne");
+        break;
+    }
+    default: {
+        console.log(`wolne ${seats-enrolled} z ${seats} miejsc`);
+        break;
+    }
+}
