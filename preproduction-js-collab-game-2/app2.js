@@ -47,7 +47,7 @@ function maIdDwa(pokoj) {
 //});
 
 // albo jeszcze prościej
-//const znaleziony = pokoje.find(pokoj => pokoj.id === 2);
+const znaleziony = pokoje.find(pokoj => pokoj.id === 2);
 
 // 3. filter i map
 const jasnePokoje = pokoje.filter(pokoj => pokoj.oswietlony);
