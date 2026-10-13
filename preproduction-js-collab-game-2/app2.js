@@ -33,21 +33,21 @@ function maIdDwa(pokoj) {
   return pokoj.id === 2;
 }
 
-const znaleziony = pokoje.find(maIdDwa);
-console.log(znaleziony.nazwa);
+//const znaleziony = pokoje.find(maIdDwa);
+//console.log(znaleziony.nazwa);
 
 // funkcja nie ma nazwy, bo używamy jej tylko tu - lokalnie
-const znaleziony = pokoje.find(function (pokoj) {
-  return pokoj.id === 2;
-});
+//const znaleziony = pokoje.find(function (pokoj) {
+//  return pokoj.id === 2;
+//});
 
 // można to napisać prościej stosując zapis strzałkowy
-const znaleziony = pokoje.find((pokoj) => {
-  return pokoj.id === 2;
-});
+//const znaleziony = pokoje.find((pokoj) => {
+//  return pokoj.id === 2;
+//});
 
 // albo jeszcze prościej
-const znaleziony = pokoje.find(pokoj => pokoj.id === 2);
+//const znaleziony = pokoje.find(pokoj => pokoj.id === 2);
 
 // 3. filter i map
 const jasnePokoje = pokoje.filter(pokoj => pokoj.oswietlony);
